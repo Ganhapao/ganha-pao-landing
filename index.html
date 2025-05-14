@@ -9,45 +9,80 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #1f0d2c;
+      background: linear-gradient(to bottom right, #1f0d2c, #3a1c5d);
       color: #fff;
     }
     .container {
-      max-width: 600px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
     .logo {
-      width: 180px;
-      margin-bottom: 20px;
+      width: 200px;
+      margin-bottom: 30px;
     }
     h1 {
-      font-size: 2.2em;
-      margin-bottom: 10px;
+      font-size: 3em;
+      margin-bottom: 20px;
       color: #f2c94c;
     }
     p {
-      font-size: 1.1em;
+      font-size: 1.2em;
       margin-bottom: 30px;
-      line-height: 1.6;
+      line-height: 1.8;
     }
     .cta-button {
       background-color: #f2c94c;
       color: #1f0d2c;
       border: none;
-      padding: 15px 25px;
-      font-size: 1em;
+      padding: 18px 35px;
+      font-size: 1.1em;
       border-radius: 10px;
       cursor: pointer;
       font-weight: 600;
       text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
     .cta-button:hover {
       background-color: #e0b43e;
+      transform: scale(1.05);
+    }
+    .highlight {
+      color: #f2c94c;
+      font-weight: 600;
+    }
+    .benefits {
+      text-align: left;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+    }
+    .benefits h2 {
+      color: #f2c94c;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+    }
+    .benefits ul li {
+      padding-left: 20px;
+      margin-bottom: 12px;
+      position: relative;
+    }
+    .benefits ul li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #f2c94c;
     }
     .footer {
-      margin-top: 50px;
+      margin-top: 60px;
       font-size: 0.9em;
       color: #aaa;
     }
@@ -56,14 +91,27 @@
 <body>
   <div class="container">
     <img src="ganha-pao-logo.png" alt="Logo Ganha Pão" class="logo">
-    <h1>Transforme sua forma de investir</h1>
+    <h1>Mentoria <span class="highlight">Ganha Pão</span></h1>
     <p>
-      Participe da <strong>Mentoria Ganha Pão</strong> e aprenda, na prática, a montar e otimizar sua carteira de investimentos.
-      Seja você iniciante ou já tenha experiência, nosso método direto e eficaz vai te colocar no caminho da liberdade financeira.
+      Aprenda, na prática, a investir com estratégia, montar uma carteira sólida e conquistar sua liberdade financeira.<br>
+      Para <span class="highlight">iniciantes</span> e também para quem já tem experiência na bolsa!
     </p>
+
+    <div class="benefits">
+      <h2>O que você vai aprender:</h2>
+      <ul>
+        <li>Como montar uma carteira de ações com foco em dividendos</li>
+        <li>Evitar os erros mais comuns de quem começa a investir</li>
+        <li>Entender o momento certo de comprar e vender</li>
+        <li>Ter acompanhamento personalizado e suporte direto</li>
+        <li>Usar o método Ganha Pão para gerar renda passiva com consistência</li>
+      </ul>
+    </div>
+
     <a href="https://wa.me/5521993051573?text=Ol%C3%A1%2C+quero+entrar+na+Mentoria+Ganha+P%C3%A3o" class="cta-button" target="_blank">Quero entrar para a Mentoria</a>
+
     <div class="footer">
-      Mentoria para fins educacionais. Riscos existem. Invista com responsabilidade.
+      Mentoria com fins educacionais. Investimentos envolvem riscos. Tenha sempre consciência e planejamento.
     </div>
   </div>
 </body>
