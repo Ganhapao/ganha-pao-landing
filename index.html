@@ -9,11 +9,12 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom right, #1f0d2c, #3a1c5d);
-      color: #fff;
+      background: radial-gradient(circle at top left, #12002f, #000000);
+      color: #e0e0e0;
+      overflow-x: hidden;
     }
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 60px 20px;
     }
@@ -21,72 +22,93 @@
       text-align: center;
     }
     .logo {
-      width: 200px;
+      width: 180px;
       margin-bottom: 30px;
       display: block;
       margin-left: auto;
       margin-right: auto;
+      filter: drop-shadow(0 0 10px #f2c94c);
     }
     h1, h2, h3 {
       color: #f2c94c;
+      letter-spacing: 1px;
     }
     p, li {
       font-size: 1.1em;
-      line-height: 1.7;
+      line-height: 1.8;
     }
     .cta-button {
-      background-color: #f2c94c;
+      background: linear-gradient(to right, #f2c94c, #ffe580);
       color: #1f0d2c;
-      border: none;
-      padding: 15px 25px;
+      padding: 15px 30px;
       font-size: 1.1em;
-      border-radius: 10px;
+      border: none;
+      border-radius: 50px;
       cursor: pointer;
       font-weight: 600;
       text-decoration: none;
       display: inline-block;
-      margin: 20px 0;
+      transition: 0.3s ease;
+      box-shadow: 0 0 15px rgba(242, 201, 76, 0.5);
     }
     .cta-button:hover {
-      background-color: #e0b43e;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(242, 201, 76, 0.8);
     }
     .section {
-      margin: 60px 0;
+      margin: 80px 0;
     }
     .box {
-      background: rgba(255, 255, 255, 0.07);
-      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
       padding: 30px;
       margin: 20px 0;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.03);
     }
     .testimonials {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
     .testimonial {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.07);
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .testimonial img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border: 2px solid #f2c94c;
     }
     .price-box {
       background: #f2c94c;
       color: #1f0d2c;
       padding: 30px;
-      border-radius: 12px;
+      border-radius: 16px;
       text-align: center;
-      font-size: 1.5em;
-      font-weight: 600;
-      margin-top: 40px;
-    }
-    .faq {
-      margin-top: 40px;
+      font-size: 1.8em;
+      font-weight: 700;
+      box-shadow: 0 0 20px rgba(242, 201, 76, 0.5);
     }
     .faq-item {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .faq-item h4 {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
+      color: #ffe580;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 80px;
+      font-size: 0.9em;
+      color: #888;
     }
   </style>
 </head>
@@ -95,122 +117,33 @@
     <img src="ganha-pao-logo.png" alt="Logo Ganha Pão" class="logo">
     <div class="center">
       <h1>Mentoria <span class="highlight">Ganha Pão</span></h1>
-      <p>Aprenda, na prática, a investir com estratégia, montar uma carteira sólida e conquistar sua liberdade financeira.</p>
+      <p>Invista com estratégia, monte sua carteira ideal e alcance sua liberdade financeira com quem entende do mercado.</p>
       <a href="https://wa.me/5521993051573?text=Ol%C3%A1%2C+quero+entrar+na+Mentoria+Ganha+P%C3%A3o" class="cta-button" target="_blank">Quero entrar para a Mentoria</a>
     </div>
 
     <div class="section">
-      <h2>Por que as pessoas fazem a Mentoria Ganha Pão?</h2>
-      <div class="box">
-        <ul>
-          <li>Querem aprender a investir de verdade, sem atalhos.</li>
-          <li>Buscam orientação prática e acompanhamento.</li>
-          <li>Desejam construir uma renda passiva sólida com dividendos.</li>
-          <li>Querem independência financeira e segurança para o futuro.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>O que os investimentos proporcionam?</h2>
-      <p>Liberdade para viver com mais tranquilidade, realizar sonhos, ter segurança financeira e parar de depender apenas do seu trabalho. Invista hoje para colher amanhã.</p>
-      <div class="center">
-        <a href="https://wa.me/5521993051573?text=Ol%C3%A1%2C+quero+come%C3%A7ar+a+investir+com+intelig%C3%AAncia" class="cta-button" target="_blank">Quero começar a investir com inteligência</a>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Para quem é a mentoria?</h2>
-      <div class="box">
-        <ul>
-          <li>Para quem nunca investiu e quer começar com segurança.</li>
-          <li>Para quem já investe, mas sente que está perdido.</li>
-          <li>Para quem quer uma estratégia clara e sustentável.</li>
-          <li>Para quem deseja ter uma renda mensal com dividendos.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Como funciona a mentoria na prática?</h2>
-      <div class="box">
-        <ul>
-          <li>Você terá acesso a encontros online ao vivo e gravados.</li>
-          <li>Grupo fechado para tirar dúvidas diretamente comigo.</li>
-          <li>Planilhas, ferramentas e conteúdo prático.</li>
-          <li>Mentoria baseada em metas reais e acompanhamento.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Bônus exclusivos</h2>
-      <div class="box">
-        <ul>
-          <li>Planilha automática para controle de carteira</li>
-          <li>Material exclusivo sobre fundos imobiliários</li>
-          <li>Checklist de boas práticas do investidor</li>
-          <li>Grupo no WhatsApp com dicas semanais</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Quem sou eu?</h2>
-      <div class="box">
-        <p>Sou um educador financeiro apaixonado por transformar vidas por meio do conhecimento. Atuei no Grupo Santander Brasil e hoje lidero iniciativas no Poupa Tempo RJ. Com minha experiência no mercado e na prática, desenvolvi um método direto e descomplicado para quem quer investir de verdade.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Depoimentos de quem já passou pela mentoria</h2>
+      <h2>Depoimentos de quem já participou</h2>
       <div class="testimonials">
         <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Renato">
           <p><strong>Renato S.</strong>: “Comecei do zero e hoje recebo dividendos todo mês. Simples e direto como prometido!”</p>
         </div>
         <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Luciana">
           <p><strong>Luciana M.</strong>: “A didática e o suporte me surpreenderam. Valeu cada centavo!”</p>
         </div>
         <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Thiago">
           <p><strong>Thiago A.</strong>: “Tinha medo de investir. Hoje tenho minha carteira e sei o que estou fazendo.”</p>
         </div>
         <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Carla">
           <p><strong>Carla B.</strong>: “Os bônus ajudaram muito, especialmente a planilha. Muito mais organizado agora.”</p>
         </div>
       </div>
     </div>
 
-    <div class="section">
-      <h2>Valor da Mentoria</h2>
-      <div class="price-box">
-        Apenas R$250,00
-      </div>
-      <div class="center">
-        <a href="https://wa.me/5521993051573?text=Quero+garantir+minha+vaga+na+mentoria+Ganha+P%C3%A3o" class="cta-button" target="_blank">Quero garantir minha vaga</a>
-      </div>
-    </div>
-
-    <div class="section faq">
-      <h2>Perguntas Frequentes</h2>
-      <div class="faq-item">
-        <h4>Preciso ter muito dinheiro para começar a investir?</h4>
-        <p>Não. Com valores acessíveis já é possível aplicar e montar sua carteira.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Essa mentoria serve pra mim que sou iniciante?</h4>
-        <p>Sim. Ela foi feita justamente para quem está começando e quer evitar erros comuns.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Já invisto, mas quero melhorar. Essa mentoria me ajuda?</h4>
-        <p>Com certeza. Vamos revisar sua estratégia e buscar otimizar sua carteira com foco em renda e segurança.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Como acesso os conteúdos?</h4>
-        <p>Você receberá tudo por WhatsApp e e-mail, com acesso ao grupo fechado e aulas gravadas.</p>
-      </div>
-    </div>
-
-    <div class="footer center">
+    <div class="footer">
       Mentoria com fins educacionais. Investimentos envolvem riscos. Tenha sempre consciência e planejamento.
     </div>
   </div>
